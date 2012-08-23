@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CandySearchViewController : UIViewController
+@interface CandySearchViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+
+@property (strong, nonatomic) NSArray *candyArray;
+@property (strong, nonatomic) NSMutableArray *filteredCandyArray;
+@property IBOutlet UISearchBar *candySearchBar;
+
 
 @end

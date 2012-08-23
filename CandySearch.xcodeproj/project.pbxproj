@@ -14,7 +14,8 @@
 		E3BDCBC615E492C5006BF866 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BDCBC515E492C5006BF866 /* main.m */; };
 		E3BDCBCA15E492C5006BF866 /* CandySearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BDCBC915E492C5006BF866 /* CandySearchAppDelegate.m */; };
 		E3BDCBCD15E492C5006BF866 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BDCBCB15E492C5006BF866 /* MainStoryboard.storyboard */; };
-		E3BDCBD015E492C5006BF866 /* CandySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BDCBCF15E492C5006BF866 /* CandySearchViewController.m */; };
+		E3BDCBD815E49348006BF866 /* CandySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BDCBD715E49348006BF866 /* CandySearchViewController.m */; };
+		E3BDCBDB15E49406006BF866 /* Candy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BDCBDA15E49406006BF866 /* Candy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +30,10 @@
 		E3BDCBC815E492C5006BF866 /* CandySearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CandySearchAppDelegate.h; sourceTree = "<group>"; };
 		E3BDCBC915E492C5006BF866 /* CandySearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CandySearchAppDelegate.m; sourceTree = "<group>"; };
 		E3BDCBCC15E492C5006BF866 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E3BDCBCE15E492C5006BF866 /* CandySearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CandySearchViewController.h; sourceTree = "<group>"; };
-		E3BDCBCF15E492C5006BF866 /* CandySearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CandySearchViewController.m; sourceTree = "<group>"; };
+		E3BDCBD615E49348006BF866 /* CandySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandySearchViewController.h; sourceTree = "<group>"; };
+		E3BDCBD715E49348006BF866 /* CandySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandySearchViewController.m; sourceTree = "<group>"; };
+		E3BDCBD915E49406006BF866 /* Candy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candy.h; sourceTree = "<group>"; };
+		E3BDCBDA15E49406006BF866 /* Candy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +83,11 @@
 				E3BDCBC815E492C5006BF866 /* CandySearchAppDelegate.h */,
 				E3BDCBC915E492C5006BF866 /* CandySearchAppDelegate.m */,
 				E3BDCBCB15E492C5006BF866 /* MainStoryboard.storyboard */,
-				E3BDCBCE15E492C5006BF866 /* CandySearchViewController.h */,
-				E3BDCBCF15E492C5006BF866 /* CandySearchViewController.m */,
 				E3BDCBC015E492C5006BF866 /* Supporting Files */,
+				E3BDCBD615E49348006BF866 /* CandySearchViewController.h */,
+				E3BDCBD715E49348006BF866 /* CandySearchViewController.m */,
+				E3BDCBD915E49406006BF866 /* Candy.h */,
+				E3BDCBDA15E49406006BF866 /* Candy.m */,
 			);
 			path = CandySearch;
 			sourceTree = "<group>";
@@ -164,7 +169,8 @@
 			files = (
 				E3BDCBC615E492C5006BF866 /* main.m in Sources */,
 				E3BDCBCA15E492C5006BF866 /* CandySearchAppDelegate.m in Sources */,
-				E3BDCBD015E492C5006BF866 /* CandySearchViewController.m in Sources */,
+				E3BDCBD815E49348006BF866 /* CandySearchViewController.m in Sources */,
+				E3BDCBDB15E49406006BF866 /* Candy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

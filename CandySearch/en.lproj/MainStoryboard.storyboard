@@ -1,24 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E2705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="aRw-eM-Nyd">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <scene sceneID="5">
+        <!--Candy Search View Controller - Candy Search-->
+        <scene sceneID="vwa-cp-Hnx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="CandySearchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoJ-lA-T2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Xn4-M2-D3u" customClass="CandySearchViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZZZ-gc-qhF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Candy name" id="F9c-dP-mr7">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Xn4-M2-D3u" id="pXd-fK-0aq"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bE1-ng-Iba">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Vvp-fQ-bbS" kind="push" identifier="candyDetail" id="QzJ-ls-5Wj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xn4-M2-D3u" id="5HV-el-SPL"/>
+                            <outlet property="delegate" destination="Xn4-M2-D3u" id="MeC-5D-tF4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Candy Search" id="Kip-05-RXv"/>
+                    <connections>
+                        <outlet property="candySearchBar" destination="F9c-dP-mr7" id="Ikp-dL-cyQ"/>
+                        <outlet property="searchDisplayController" destination="pzr-Ln-3ID" id="Yeu-tf-xdD"/>
+                    </connections>
+                </tableViewController>
+                <searchDisplayController id="pzr-Ln-3ID">
+                    <connections>
+                        <outlet property="delegate" destination="Xn4-M2-D3u" id="Gq5-KB-Bo5"/>
+                        <outlet property="searchBar" destination="F9c-dP-mr7" id="Gmn-vx-WjX"/>
+                        <outlet property="searchContentsController" destination="Xn4-M2-D3u" id="ei6-78-45r"/>
+                        <outlet property="searchResultsDataSource" destination="Xn4-M2-D3u" id="krL-qn-EPZ"/>
+                        <outlet property="searchResultsDelegate" destination="Xn4-M2-D3u" id="RyE-MG-2CH"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-185" y="-24"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dab-CD-bdt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZx-LT-b7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Vvp-fQ-bbS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j4d-x4-0Eo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ifR-uI-7pz"/>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="226" y="-24"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9xz-TN-uyo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLv-r5-ZQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="aRw-eM-Nyd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="STt-XH-MQA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xn4-M2-D3u" kind="relationship" relationship="rootViewController" id="az7-Zx-5qq"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-605" y="-24"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CandySearchViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CandySearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="candySearchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
